@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="src/shared/css/style.css">
+    <title>Crud [React] </title>
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="navbar-logo">Proyecto repaso</div>
+
+  <ul class="navbar-links">
+    <li><a href="index.html">Crud</a></li>
+    <li><a href="src/features/callbacks.html">Callbacks</a></li>
+    <li><a href="src/features/promesas.html">Promesas</a></li>
+    <li><a href="src/features/async.html">async</a></li>
+    <li><a href="src/features/destructuring.html">Destructuring</a></li>
+
+  </ul>
+</nav>
+    <div class="container">
+        <header class="header">
+    </div>
+    <h1>Crud de datos</h1>
+    </div>
+    <div class="accion-header">
+        <button id="exportar" cklass="btn warning">Exportar JSON </button>
+        <button id="borrarTodo" class="btn danger">Borrar todo </button>
+    </div>
+    </header>
+
+    <main class="content">
+        <section class="donde-section">
+            <h3>Registro de Datos</h3>
+            <p>Registra o actualiza los datos.</p>
+
+            <input type="text" id="nombre" placeholder="Coloque el nombre respectivo">
+            <input type="number" id="documento" placeholder="12345678">
+            <input type="gmail" id="correo" placeholder="mateo@gmail.com">
+
+            <button id="guardar" class="btn primary">Guardar </button>
+        </section>
+
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Correo</th>
+                        <th>Nombre Completo</th>
+                        <th>Documento</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaDatos"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="src/features/script.js"></script>
+</body>
+
+</html>
